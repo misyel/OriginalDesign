@@ -2,7 +2,6 @@ int i = 220;
 int x = 0;
 int k = 130;
 int p = 320;
-int value = 0;
  void setup() {
      size(500, 500); 
      smooth();
@@ -32,6 +31,7 @@ void changeStroke(){
 }
 
 void changeDesign(){
+  background(255);
   if (mousePressed == true){
       ellipse(random(500), random(500), 20, 20);
       bear();
@@ -40,7 +40,6 @@ void changeDesign(){
     bear();
     line(x, 0, random(0, width), height);
   }
-  background(255);
 }
    
 void update(){
